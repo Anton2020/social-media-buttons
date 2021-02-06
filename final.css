@@ -1,0 +1,209 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: #fcfcfc;
+}
+section {
+  padding: 0 100px;
+  background: url("https://ath2.unileverservices.com/wp-content/uploads/sites/8/2019/09/best-keratin-treatment-for-curly-hair-feature-782x439.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.box {
+  position: relative;
+  max-width: 999px;
+  padding: 50px;
+  background: rgba(43, 49, 81, 0.5);
+  justify-content: center;
+}
+.box h1 {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+.box h2 {
+  color: white;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+}
+.box p {
+  color: white;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.box p a {
+  text-decoration: none;
+  color: white;
+}
+.box p:hover a {
+  text-decoration: underline;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #2b3151;
+  font-family: "Libre Baskerville", serif;
+}
+.logo {
+  color: rgb(255, 246, 246);
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: rgb(255, 246, 246);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.container {
+  width: 1000px;
+  height: 400px;
+  background: #ccc;
+  margin: 120px auto;
+  display: flex;
+}
+.col {
+  height: 100%;
+  flex: 1;
+  color: white;
+  box-sizing: border-box;
+  padding: 25px;
+  position: relative;
+  transition: 0.6s;
+}
+.col:nth-child(1) {
+  background-color: #e4bbb8;
+  opacity: 0.9;
+}
+.col:nth-child(2) {
+  background-color: #93a8be;
+  opacity: 0.9;
+}
+.col:nth-child(3) {
+  background-color: #d4d5d5;
+  opacity: 0.9;
+}
+.col h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+.caption {
+  max-width: 230px;
+  font-size: 12px;
+  margin: 28px 0;
+  display: none;
+}
+.caption button {
+  border: 1px solid white;
+  background: transparent;
+  outline: none;
+  padding: 8px 18px;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.col img {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.col:hover {
+  flex-grow: 2.5;
+}
+.col:hover .caption {
+  display: block;
+}
+.col:hover .col h2 {
+  text-align: left;
+}
+footer {
+  background: #2b3151;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: white;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: #2b3151;
+}
+.footer-bottom {
+  background: black;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
