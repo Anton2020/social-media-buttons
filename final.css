@@ -8,24 +8,55 @@ body {
 }
 section {
   padding: 0 100px;
-  background: url("https://ath2.unileverservices.com/wp-content/uploads/sites/8/2019/09/best-keratin-treatment-for-curly-hair-feature-782x439.jpg");
+  background: url("https://images.unsplash.com/photo-1611221128786-60351ce7f91b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1488&q=80");
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   align-items: center;
+  opacity: 0.9;
+}
+.up {
+  text-align: center;
+  margin: 15px auto;
+  font-size: 30px;
+  max-width: 1100px;
+  position: relative;
+}
+.up:before {
+  content: "";
+  display: block;
+  width: 420px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+.up:after {
+  content: "";
+  display: block;
+  width: 420px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
 }
 .box {
   position: relative;
-  max-width: 999px;
   padding: 50px;
-  background: rgba(43, 49, 81, 0.5);
+  background: transparent;
   justify-content: center;
+  transform: translateY(90px);
 }
 .box h1 {
   margin: 0 auto;
   padding: 0;
-  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
   text-transform: uppercase;
   color: white;
   text-align: center;
@@ -34,7 +65,8 @@ section {
   color: white;
   margin: 0 auto;
   padding: 0;
-  font-size: 20px;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
   font-weight: lighter;
   text-align: center;
 }
@@ -43,6 +75,8 @@ section {
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  font-size: large;
+  font-family: "Open Sans", sans-serif;
 }
 .box p a {
   text-decoration: none;
@@ -50,15 +84,31 @@ section {
 }
 .box p:hover a {
   text-decoration: underline;
+  color: #460f08;
 }
+
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #2b3151;
+  background-color: #460f08;
   font-family: "Libre Baskerville", serif;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
+
+#signUp {
+  border: 0px;
+  font-family: "Libre Baskerville", serif;
+  background: transparent;
+  color: rgb(255, 246, 246);
+  justify-content: space-around;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
 .logo {
   color: rgb(255, 246, 246);
   letter-spacing: 3px;
@@ -80,10 +130,10 @@ nav {
   font-size: 14px;
 }
 .container {
-  width: 1000px;
-  height: 400px;
+  width: 1410px;
+  height: 440px;
   background: #ccc;
-  margin: 120px auto;
+  margin: 20px auto;
   display: flex;
 }
 .col {
@@ -96,27 +146,30 @@ nav {
   transition: 0.6s;
 }
 .col:nth-child(1) {
-  background-color: #e4bbb8;
-  opacity: 0.9;
+  background-color: rgba(133, 48, 47, 0.8);
+  opacity: 0.8;
 }
 .col:nth-child(2) {
-  background-color: #93a8be;
-  opacity: 0.9;
+  background-color: rgba(130, 84, 77, 0.8);
+  opacity: 0.8;
 }
 .col:nth-child(3) {
-  background-color: #d4d5d5;
-  opacity: 0.9;
+  background-color: rgba(129, 140, 150, 0.8);
+  opacity: 0.8;
 }
 .col h2 {
   text-align: center;
   font-size: 22px;
   font-weight: 600;
+  font-family: "Open Sans", sans-serif;
 }
 .caption {
-  max-width: 230px;
-  font-size: 12px;
+  max-width: 490px;
+  font-size: 13px;
   margin: 28px 0;
   display: none;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
 }
 .caption button {
   border: 1px solid white;
@@ -128,6 +181,15 @@ nav {
   margin-top: 20px;
   cursor: pointer;
   font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+.caption button a {
+  text-decoration: none;
+  color: white;
+}
+.caption button:hover a {
+  text-decoration: underline;
+  color: #460f08;
 }
 .col img {
   width: 200px;
@@ -136,7 +198,7 @@ nav {
   bottom: 0;
 }
 .col:hover {
-  flex-grow: 2.5;
+  flex-grow: 2;
 }
 .col:hover .caption {
   display: block;
@@ -145,23 +207,25 @@ nav {
   text-align: left;
 }
 footer {
-  background: #2b3151;
+  background: #460f08;
   height: auto;
   width: 100vw;
   padding-top: 40px;
-  color: white;
+  color: rgb(255, 246, 246);
 }
 .footer-content {
   display: flex;
   align-items: center;
+  font-family: "Libre Baskerville", serif;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
 .footer-content h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   text-transform: capitalize;
+  letter-spacing: 3px;
   line-height: 3rem;
 }
 .footer-content p {
@@ -189,7 +253,7 @@ footer {
   transition: color 0.4s ease;
 }
 .socials a:hover i {
-  color: #2b3151;
+  color: #9fc8f0;
 }
 .footer-bottom {
   background: black;
@@ -200,10 +264,33 @@ footer {
 .footer-bottom p {
   font-size: 14px;
   word-spacing: 2px;
-  text-transform: capitalize;
 }
 .footer-bottom span {
   text-transform: uppercase;
-  opacity: 0.4;
   font-weight: 200;
+}
+.footer-bottom span a {
+  text-decoration: none;
+  color: white;
+}
+.footer-bottom span:hover a {
+  text-decoration: underline;
+  color: #460f08;
+}
+
+@media screen and (max-width: 1100px) {
+  .box h1 {
+    font-size: 14px;
+  }
+  .box h2 {
+    font-size: 13px;
+    margin: 0 0;
+    padding: 0;
+  }
+  button {
+    font-size: 8px;
+  }
+  .nav-links a {
+    font-size: 8px;
+  }
 }
